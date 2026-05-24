@@ -5,7 +5,7 @@ description: "Conduct rigorous thematic analysis (TA) of qualitative data follow
 
 # Thematic Analysis — Braun & Clarke's Six-Phase Framework
 
-This skill walks a user through conducting a rigorous thematic analysis (TA) on qualitative data, following the six-phase framework from Braun and Clarke (2006). It produces a **Word document (.docx)** write-up of the analysis and an **annotated thematic map** (PNG).
+This skill walks a user through conducting a rigorous thematic analysis (TA) on qualitative data, following the six-phase framework from Braun and Clarke (2006). It produces a **Word document (.docx)** write-up of the analysis, an **annotated thematic map** (PNG), and an **Excel workbook (.xlsx)** that captures theme hierarchy and coding.
 
 The skill is grounded in one source:
 
@@ -27,6 +27,7 @@ Read these reference files as needed:
 Also read these skills before generating outputs:
 
 - **docx skill** (`/mnt/skills/public/docx/SKILL.md`) — Required for the Word document.
+- **xlsx skill** (`/mnt/skills/public/xlsx/SKILL.md`) — Required for the Excel workbook that records the coding hierarchy across theme levels.
 - **apa-referencing skill** (`/mnt/skills/user/apa-referencing/SKILL.md`) — If the user wants citations to existing literature in the analysis, format them in APA 7th Edition.
 
 If the user has a **writing-style skill**, do not apply it to the manuscript body — see "Writing register" under Phase 7. A writing-style skill may still apply to ancillary outputs (a plain-language summary, a blog version of the findings) if the user asks for those separately.
@@ -208,11 +209,23 @@ Output of this phase: the final theme list with definitions, sub-themes, and fin
 
 Also produce the **final thematic map** (`phase6_final_map.png`) — this is the version that will appear in the write-up.
 
+Create a hierarchical coding workbook as `phase6_theme_coding_matrix.xlsx` with at least these columns:
+
+- `Theme_Level_1`
+- `Theme_Level_2`
+- `Theme_Level_3` (leave blank if not used)
+- `Code`
+- `Code_Definition`
+- `Representative_Extract`
+- `Data_Item_ID`
+
+Each row should represent one code linked to the deepest available theme level.
+
 ---
 
 ## Phase 7 (skill workflow): Producing the report
 
-The final write-up. This is the last phase of Braun and Clarke's framework and the deliverable of the skill.
+The final write-up. This is the last phase of Braun and Clarke's framework and the deliverable of the skill. At completion, ensure all three final outputs are present: `.docx`, `.png`, and `.xlsx`.
 
 ### Run the quality checklist first
 
