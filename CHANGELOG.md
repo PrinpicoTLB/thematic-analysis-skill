@@ -2,6 +2,15 @@
 
 All notable changes to this skill will be documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Excel output `phase6_theme_coding_matrix.xlsx` as a third final deliverable, capturing hierarchical theme coding (Theme Level 1/2/3, code, definition, representative extract, and data item ID).
+- Explicit xlsx-skill dependency in the skill workflow for generating the coding workbook.
+
+### Changed
+- Updated skill and README output specifications from two final files to three (`.docx`, `.png`, `.xlsx`).
+
 ## [1.1.0] — 2026-05-12
 
 ### Added

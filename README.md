@@ -1,6 +1,6 @@
 # Thematic Analysis Skill for Claude
 
-A Claude skill that walks you through a rigorous thematic analysis (TA) of qualitative data, following Braun and Clarke's (2006) six-phase framework. The skill produces a manuscript-style Word document and an annotated thematic map ready for academic writing.
+A Claude skill that walks you through a rigorous thematic analysis (TA) of qualitative data, following Braun and Clarke's (2006) six-phase framework. The skill produces a manuscript-style Word document, an annotated thematic map, and a coding-hierarchy Excel workbook ready for academic writing and audit trails.
 
 Built and maintained by **Chuah Kee Man** (Faculty of Education, Language and Communication, Universiti Malaysia Sarawak).
 
@@ -23,10 +23,11 @@ It also bundles the 15-point quality checklist and the five common pitfalls from
 
 ## Output
 
-Two files land in your workspace at the end:
+Three files land in your workspace at the end:
 
 - `<study_title>_thematic_analysis.docx` — the full manuscript-style write-up with Introduction, Method, Findings, optional Discussion and an APA 7th Edition reference list.
 - `phase6_final_map.png` — the final thematic map, used as a figure in the manuscript.
+- `phase6_theme_coding_matrix.xlsx` — an Excel matrix mapping each code to theme levels (L1/L2/L3), with code definitions, representative extracts and source data item IDs.
 
 Intermediate working files (familiarisation notes, code lists, candidate maps, theme definitions) are also saved so you can audit the process or revisit a phase.
 
